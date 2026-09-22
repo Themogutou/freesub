@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 以色列 (Israel) 01 - xiaohe
+- name: 🇮🇱 以色列 (Israel) 01 - Themogutou
   server: 185.95.231.156
   port: 443
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
+- name: 🇮🇱 以色列 (Israel) 02 - Themogutou
   server: 185.95.231.233
   port: 443
   udp: true
@@ -35,14 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 以色列 (Israel) 01 - xiaohe
-  - 🇮🇱 以色列 (Israel) 02 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - Themogutou
+  - 🇮🇱 以色列 (Israel) 02 - Themogutou
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 以色列 (Israel) 01 - xiaohe
-  - 🇮🇱 以色列 (Israel) 02 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - Themogutou
+  - 🇮🇱 以色列 (Israel) 02 - Themogutou
 rules:
 - MATCH,PROXIES
