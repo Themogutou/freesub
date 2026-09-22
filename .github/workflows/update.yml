@@ -34,6 +34,7 @@ jobs:
         env:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
+          CUSTOM_TAG: ${{ vars.CUSTOM_TAG || 'Themogutou' }}
 
       - name: Upload test artifacts (调试用, 7天保留)
         uses: actions/upload-artifact@v4
